@@ -16,20 +16,20 @@ int numberB = Convert.ToInt32(value);
 Console.Write("Введите третье число");
 value = Console.ReadLine();
 int numberD = Convert.ToInt32(value);
-int max = numberA;
+int max = 0;
 if ((numberA > numberB) && (numberA > numberD))
 {
-   int max = numberA;
+   max = numberA;
 }
 else
 if ((numberB > numberA) && (numberB > numberD))
 {    
-  int max = numberB;
+   max = numberB;
 }
 else
 if ((numberD > numberA) && (numberD > numberB))
 {   
-  int max = numberD;
+   max = numberD;
 }
 Console.WriteLine("Найбольшее из трёх ");
 Console.Write(max);
